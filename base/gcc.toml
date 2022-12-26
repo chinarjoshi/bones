@@ -1,0 +1,12 @@
+[package]
+name = 'gcc'
+description = 'GNU Compiler Collection'
+version = '12.2'
+use = [ 'ada', 'd', 'doc', 'graphite', 'lto' ]
+
+[dependencies]
+build = [ 'virtual-awk', 'posix-shell?', 'binutils', 'make', 'gzip || bzip2', 'make', 'gmp', 'mpfr', 'mpc', 'zstd', lto = 'binutils']
+required = 'glibc || musl'
+
+[configure]
+

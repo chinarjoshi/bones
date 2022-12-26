@@ -1,0 +1,16 @@
+[package]
+name = 'autoconf'
+description = 'Create autoconfiguration files'
+version = '2.71-r5'
+
+[dependencies]
+build = 'm4 perl'
+run = 'autoconf-wrapper gnuconfig'
+
+[patches]
+
+[prepare]
+
+[config]
+
+[install]

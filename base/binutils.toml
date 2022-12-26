@@ -1,0 +1,34 @@
+[package]
+name = 'binutils'
+version = '2.39'
+url.src = 'https://ftp.gnu.org/gnu/binutils/binutils-$.tar.gx'
+url.bin = 
+use = [ 'gold || ld', 'pgo' ]'
+
+[dependencies]
+
+
+[configure]
+flags = [
+  'prefix=/usr',
+  'libdir=/usr/lib',
+  'enable-plugins',
+  'enable-shared',
+  'enable-threads',
+  'with-system-zlib',
+  'enable-gold && gold || '
+]
+  --prefix=/usr
+  --libdir=/usr/lib
+  --enable-plugins
+  --enable-shared
+  --enable-threads
+  --with-system-zlib
+  --enable-gold={gold}
+  --disable-ld={ld}
+  --enable-lto
+'''
+
+[install]
+# Path to files to be removed
+remove = ''

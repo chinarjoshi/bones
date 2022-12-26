@@ -1,0 +1,12 @@
+[package]
+name = 'musl'
+url = ''
+description = 'Lightweight C standard library'
+version = '1.2.3'
+
+[configure]
+flags = '''
+  --prefix=$HOME/musl
+  --enable-optimize
+  --enable-shared
+'
