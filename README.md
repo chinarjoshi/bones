@@ -1,2 +1,2 @@
-# slate-repo
-Purely declarative package repository for slate
+# bones
+Read the description
